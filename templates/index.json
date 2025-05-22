@@ -7,14 +7,45 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "hero_height": 600,
+        "autoplay": true,
+        "transition_time": 5,
+        "overlay_opacity": 0.4
+      },
+      "blocks": {
+        "block1": {
+          "type": "image_slide",
+          "settings": {
+            "heading": "Slide One",
+            "subheading": "Subheading One",
+            "button_text": "Learn More",
+            "button_link": "#"
+          }
+        },
+        "block2": {
+          "type": "image_slide",
+          "settings": {
+            "heading": "Slide Two",
+            "subheading": "Subheading Two",
+            "button_text": "Shop Now",
+            "button_link": "#"
+          }
+        }
+      }
+    },
     "main": {
-      "type": "hello-world",
-      "settings": {}
+      "type": "hello-world"
     }
   },
   "order": [
+    "hero",
     "main"
   ]
 }
+
+
